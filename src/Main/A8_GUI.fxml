@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GUIController1">
+   <children>
+      <HBox prefHeight="20.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="333.0" text="Heap Table" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="334.0" text="File Table" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="333.0" text="Symbol Table" textAlignment="CENTER" />
+         </children>
+      </HBox>
+      <HBox fx:id="H1Row" prefHeight="270.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="THeap" prefHeight="200.0" prefWidth="333.0">
+              <columns>
+                <TableColumn fx:id="adress" prefWidth="165.0" text="adress" />
+                <TableColumn fx:id="heapvalue" prefWidth="165.0" text="value" />
+              </columns>
+            </TableView>
+            <TableView fx:id="TFile" prefHeight="300.0" prefWidth="334.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="165.0" text="id" />
+                <TableColumn fx:id="filename" prefWidth="165.0" text="file name" />
+              </columns>
+            </TableView>
+            <TableView fx:id="TSymTbl" prefHeight="300.0" prefWidth="333.0">
+              <columns>
+                <TableColumn fx:id="variablename" prefWidth="165.0" text="variable name" />
+                <TableColumn fx:id="varvalue" prefWidth="165.0" text="value" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox fx:id="H2Row" prefHeight="270.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="LOut" prefHeight="300.0" prefWidth="333.0" />
+            <ListView fx:id="LPrgState" prefHeight="300.0" prefWidth="334.0" />
+            <ListView fx:id="LExeStk" prefHeight="300.0" prefWidth="333.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="20.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="333.0" text="Out" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="334.0" text="Program States" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="333.0" text="Execution Stack" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="TXField" prefHeight="25.0" prefWidth="333.0" />
+            <Button fx:id="BStep" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#next" prefHeight="25.0" prefWidth="334.0" text="Run One Step" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

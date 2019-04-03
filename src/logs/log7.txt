@@ -1,0 +1,5407 @@
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0)))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), a= 0))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), a= 0)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), a= 0))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), a= 0)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+--> print(6)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+--> print(6)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(6)
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(6)
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+--> 6
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+--> print(6)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+--> print(6)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(6)
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(6)
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+--> 6
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (v= 10, (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> v= 10
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(v, 20), (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> new(v, 20)
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 10
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (new(a, 22), (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6))))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> new(a, 22)
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (wH(a, 30), (print(a), (print(rH(a)), (a= 0, print(6)))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> wH(a, 30)
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 22
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(a), (print(rH(a)), (a= 0, print(6))))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(a)
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (print(rH(a)), (a= 0, print(6)))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(rH(a))
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> (a= 0, print(6))
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+--> print(6)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> a= 0
+--> print(6)
+SymTable:
+--> Key: a Value: 2
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(6)
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+--> Key: 2 Value: 30
+------------------------------------------
+ID:7
+ExeStack:
+--> print(6)
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------
+ID:7
+ExeStack:
+SymTable:
+--> Key: a Value: 0
+--> Key: v Value: 1
+Out:
+--> 2
+--> 30
+--> 6
+FileTable:
+Heap:
+--> Key: 1 Value: 20
+------------------------------------------

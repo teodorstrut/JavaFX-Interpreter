@@ -1,0 +1,2300 @@
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+Out:
+FileTable:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> (openFile(fname, src/testfiles/test.in), ReadFile(fname, val))
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+Out:
+FileTable:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> (openFile(fname, src/testfiles/test.in), ReadFile(fname, val))
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (openFile(fname, src/testfiles/test.in), ReadFile(fname, val))
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= 6
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (openFile(fname, src/testfiles/test.in), ReadFile(fname, val))
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (v= 6, (while(v - 4)(print(v), v= v - 1), print(v)))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= 6
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 1 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ((openFile(fname, src/testfiles/test.in), ReadFile(fname, val)), (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (openFile(fname, src/testfiles/test.in), ReadFile(fname, val))
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> openFile(fname, src/testfiles/test.in)
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 1
+Out:
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(val), (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname)))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (If val Then (ReadFile(fname, val), print(val)) Else print(0), CloseRFile(fname))
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> If val Then (ReadFile(fname, val), print(val)) Else print(0)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> (ReadFile(fname, val), print(val))
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> ReadFile(fname, val)
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 15
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> print(val)
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+--> CloseRFile(fname)
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+--> Key: 2 Value: src/testfiles/test.in
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: val Value: 50
+--> Key: fname Value: 2
+Out:
+--> 15
+--> 50
+--> 15
+--> 50
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= 6
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= 6
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (while(v - 4)(print(v), v= v - 1), print(v))
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 6
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> (print(v), v= v - 1)
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> v= v - 1
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 5
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> while(v - 4)(print(v), v= v - 1)
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+--> print(v)
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+FileTable:
+Heap:
+------------------------------------------
+ExeStack:
+SymTable:
+--> Key: v Value: 4
+Out:
+--> 6
+--> 5
+--> 4
+FileTable:
+Heap:
+------------------------------------------
